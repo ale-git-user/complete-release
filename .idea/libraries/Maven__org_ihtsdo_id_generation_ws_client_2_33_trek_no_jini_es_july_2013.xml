@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.ihtsdo:id-generation-ws-client:2.33-trek-no-jini-es-july-2013">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ihtsdo/id-generation-ws-client/2.33-trek-no-jini-es-july-2013/id-generation-ws-client-2.33-trek-no-jini-es-july-2013.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ihtsdo/id-generation-ws-client/2.33-trek-no-jini-es-july-2013/id-generation-ws-client-2.33-trek-no-jini-es-july-2013-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ihtsdo/id-generation-ws-client/2.33-trek-no-jini-es-july-2013/id-generation-ws-client-2.33-trek-no-jini-es-july-2013-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
