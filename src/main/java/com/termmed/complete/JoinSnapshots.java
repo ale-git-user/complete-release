@@ -40,6 +40,7 @@ public class JoinSnapshots {
 		joinFiles(folder1,folder2,"rf2-mrcm-attr-range",null,null,null,true);
 		joinFiles(folder1,folder2,"rf2-mrcm-domain",null,null,null,true);
 		joinFiles(folder1,folder2,"rf2-owl-expression",null,"expression","ontology",true);
+		joinFiles(folder1,folder2,"rf2-inferred-concrete-domains",null,null,null,true);
 //		joinFiles(folder1,folder2,"rf2-owl-ontology",null,"ontology","axiom",true);
 			
 	}

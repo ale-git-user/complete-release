@@ -15,6 +15,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/sct2_Concept_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-descriptions</fileType>
@@ -30,6 +31,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\w+\\t\d{3\,}\\t.+\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/sct2_Description_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-simplemaps</fileType>
@@ -45,6 +47,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t.+$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/der2_sRefset_SimpleMap_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-orderRefset</fileType>
@@ -60,6 +63,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{1\,}\\t\d{1\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/res2_icRefset_OrderedType_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-simple</fileType>
@@ -75,6 +79,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t.+$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/der2_Refset_Simple_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-language</fileType>
@@ -90,6 +95,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/der2_cRefset_Language_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-attributevalue</fileType>
@@ -105,6 +111,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/der2_cRefset_AttributeValue_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-association</fileType>
@@ -115,11 +122,12 @@
 				<regex>.*Association.*</regex>
 			</nameRule>
 			<headerRule>
-				<regex>id\\teffectiveTime\\tactive\\tmoduleId\\tref[sS]etId\\treferencedComponentId\\ttargetComponent(Id)?$</regex>
+				<regex>id\\teffectiveTime\\tactive\\tmoduleId\\tref[sS]etId\\treferencedComponentId\\ttargetComponentId$</regex>
 			</headerRule>
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/der2_cRefset_Association_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-mrcm-attr-domain</fileType>
@@ -135,6 +143,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{1}\\t[\w]{4}\\t[\w]{4}\\t\d{3\,}\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/der2_cissccRefset_MRCMAttributeDomain_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-mrcm-module-scope</fileType>
@@ -150,6 +159,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/der2_cRefset_MRCMModuleScope_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-mrcm-attr-range</fileType>
@@ -165,6 +175,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t.+\\t.+\\t\d{3\,}\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/der2_ssccRefset_MRCMAttributeRange_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-mrcm-domain</fileType>
@@ -180,6 +191,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t.+\\t.+\\t.+\\t.+\\t.+\\t.+\\t.+$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/der2_sssssssRefset_MRCMDomain_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-owl-expression</fileType>
@@ -194,6 +206,22 @@
 			</headerRule>
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t.+$</regex>
+			</contentRule>
+			<metadataFile>config/metadata/RF2/sct2_sRefset_OWLExpression_Metadata.xml</metadataFile>
+		</file>
+		<file>
+			<fileType>axiom-stated</fileType>
+			<namePattern>
+				<regex>.*AxiomStRels.*</regex>
+			</namePattern>
+			<nameRule>
+				<regex>.*AxiomStRels.*</regex>
+			</nameRule>
+			<headerRule>
+				<regex>id\\taxiomId\\teffectiveTime\\tactive\\tsourceId\\tdestinationId\\trelationshipGroup\\ttypeId\\tdefinitionStatusId$</regex>
+			</headerRule>
+			<contentRule>
+				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{1\,3}\\t\d{3\,}$</regex>
 			</contentRule>
 		</file>
 		<!-- <file>
@@ -210,6 +238,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file> -->
 		<!-- Commented to avoid match with relationships
 			<file>
@@ -226,6 +255,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{1\,3}\\t\d{3\,}\\t((\-1)|(\d{1\,}))\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file> -->
 		<!-- <file>
 			<fileType>rf2-componenthistory</fileType>
@@ -241,6 +271,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{3\,}\\t\d{1}\\t\d{1}\\t.*$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file> -->
 		<!-- <file>
 			<fileType>rf2-historicalrelationshipidentifiers</fileType>
@@ -256,6 +287,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file> -->
 		<!-- <file>
 			<fileType>rf2-retiredisarelationship</fileType>
@@ -271,6 +303,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{1\,3}\\t\d{3\,}\\t((\-1)|(\d{1\,}))\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file> -->
 		<!-- <file>
 			<fileType>rf2-retiredstatedisarelationship</fileType>
@@ -286,7 +319,8 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{1\,3}\\t\d{3\,}\\t((\-1)|(\d{1\,}))\\t\d{3\,}$</regex>
 			</contentRule>
-		</file> -->
+			<metadataFile>config/metadata/RF2/</metadataFile>
+		</file>
 		<file>
 			<fileType>rf2-subsets</fileType>
 			<namePattern>
@@ -301,6 +335,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d+\\t\d+\\t\d+\\t.+\\t\d{1}\\t.+\\t.+\\t\d{1}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-crossmapsets</fileType>
@@ -316,6 +351,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t.+\\t\d{1}\\t.+\\t.+\\t\d+\\t\d*\\t.{1}\\t\d*$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-crossmaptargets</fileType>
@@ -331,7 +367,8 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t.+\\t.*\\t.*\\t.*$</regex>
 			</contentRule>
-		</file>
+			<metadataFile>config/metadata/RF2/</metadataFile>
+		</file> -->
 		<file>
 			<fileType>rf2-identifier</fileType>
 			<namePattern>
@@ -346,6 +383,7 @@
 			<contentRule>
 				<regex>.*\\t.*\\t.*\\t.*\\t.*\\t.*$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/sct2_Identifier_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-equivalencemap</fileType>
@@ -361,6 +399,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{1}\\t\d{1}\\t.*\\t.*\\t.*\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/der2_iissscRefset_ComplexMap_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-extendedmap</fileType>
@@ -376,7 +415,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{1}\\t\d{1}\\t.*\\t.*\\t.*\\t\d{3\,}\\t\d{3\,}$</regex>
 			</contentRule>
-			<metadataFile></metadataFile>
+			<metadataFile>config/metadata/RF2/der2_iisssccRefset_ExtendedMap_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-uktc-equivalencemap</fileType>
@@ -392,6 +431,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{1\,}\\t\d{1\,}\\t.*\\t.*\\t.*\\t\d{3\,}\\t\d{1\,}$</regex>
 			</contentRule>
+			<metadataFile></metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-refsetdescriptor</fileType>
@@ -407,6 +447,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{1}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/der2_cciRefset_RefsetDescriptor_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-descriptiontype</fileType>
@@ -422,6 +463,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d*$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/der2_ciRefset_DescriptionType_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-moduledependency</fileType>
@@ -437,6 +479,7 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{8}\\t\d{8}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/der2_ssRefset_ModuleDependency_Metadata.xml</metadataFile>
 		</file>
 		<file>
 			<fileType>rf2-textDefinition</fileType>
@@ -452,6 +495,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\w+\\t\d{3\,}\\t.+\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/sct2_TextDefinition_Metadata.xml</metadataFile>
 		</file>
 		<!-- <file>
 			<fileType>rf2-statedrelationship</fileType>
@@ -467,6 +511,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{1\,3}\\t\d{3\,}\\t((\-1)|(\d{1\,}))\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/sct2_StatedRelationship_Metadata.xml</metadataFile>
 		</file> -->
 		<file>
 			<fileType>rf2-relationships</fileType>
@@ -481,6 +526,22 @@
 			</headerRule>
 			<contentRule>
 				<regex>\d{3\,}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{1\,3}\\t\d{3\,}\\t((\-1)|(\d{1\,}))\\t\d{3\,}$</regex>
+			</contentRule>
+			<metadataFile>config/metadata/RF2/sct2_Relationship_Metadata.xml</metadataFile>
+		</file>
+		<file>
+			<fileType>rf2-inferred-concrete-domains</fileType>
+			<namePattern>
+				<regex>.*RelationshipConcreteValues.*</regex>
+			</namePattern>
+			<nameRule>
+				<regex>.*RelationshipConcreteValues.*</regex>
+			</nameRule>
+			<headerRule>
+				<regex>id\\teffectiveTime\\tactive\\tmoduleId\\tsourceId\\tvalue\\trelationshipGroup\\ttypeId\\tcharacteristicTypeId\\tmodifierId$</regex>
+			</headerRule>
+			<contentRule>
+				<regex>\d{3\,}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t.+\\t\d{1\,3}\\t\d{3\,}\\t((\-1)|(\d{1\,}))\\t\d{3\,}$</regex>
 			</contentRule>
 		</file>
 		<file>
@@ -497,8 +558,9 @@
 			<contentRule>
 				<regex>[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}\\t\d{8}\\t\d{1}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{1\,}\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/res2_icRefset_OrderedType_Metadata.xml</metadataFile>
 		</file>
-		<file>
+		<!--<file>
 			<fileType>rf1-concepts</fileType>
 			<namePattern>
 				<regex>.*concept.*</regex>
@@ -512,6 +574,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d+\\t.+\\t.+\\t.+\\t\d{1}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file>
 		<file>
 			<fileType>rf1-descriptions</fileType>
@@ -527,6 +590,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{1}\\t\d{3\,}\\t.+\\t\d{1}\\t\d{1}\\t.+$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file>
 		<file>
 			<fileType>rf1-relationships</fileType>
@@ -542,6 +606,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{3\,}\\t\d{1}\\t\d{1}\\t\d{1\,2}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file>
 		<file>
 			<fileType>rf1-subsets</fileType>
@@ -557,6 +622,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{3\,}\\t\d{1}\\t.+\\t\d{1}\\t.+\\t\d{1}\\t\d{1}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file>
 		<file>
 			<fileType>rf1-subsetmembers</fileType>
@@ -572,6 +638,7 @@
 			<contentRule>
 				<regex>\d+\\t\d{3\,}\\t\d{1}\\t\d*$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file>
 		<file>
 			<fileType>rf1-crossmaps</fileType>
@@ -587,6 +654,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{3\,}\\t\d*\\t\d*\\t.+\\t\d*\\t\d*$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file>
 		<file>
 			<fileType>rf1-crossmapsets</fileType>
@@ -602,6 +670,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t.+\\t\d{1}\\t.+\\t.+\\t\d+\\t\d*\\t.{1}\\t\d*$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file>
 		<file>
 			<fileType>rf1-crossmaptargets</fileType>
@@ -617,6 +686,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t.*\\t.*\\t.*\\t.*$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file>
 		<file>
 			<fileType>rf1-componenthistory</fileType>
@@ -632,6 +702,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{3\,}\\t\d{1}\\t\d{1\,2}\\t.*$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file>
 		<file>
 			<fileType>rf1-references</fileType>
@@ -647,6 +718,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t\d{1}\\t\d{3\,}$</regex>
 			</contentRule>
+			<metadataFile>config/metadata/RF2/</metadataFile>
 		</file>
 		<file>
 			<fileType>rf1-textdefinitions</fileType>
@@ -662,6 +734,7 @@
 			<contentRule>
 				<regex>\d{3\,}\\t.+\\t.+\\t.+$</regex>
 			</contentRule>
-		</file>
+			<metadataFile>config/metadata/RF2/</metadataFile>
+		</file>-->
 	</files>
 </config>
